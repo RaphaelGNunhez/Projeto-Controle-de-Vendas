@@ -150,6 +150,64 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.dao
         }
         #endregion
 
-        //Metodo buscarClientePorCpf
+        #region buscarClientePorNome
+        public DataTable buscarClientePorNome(string nome)
+        {
+            try
+            {
+                DataTable tabelacliente = new DataTable();
+                string sql = "select *from tb_clientes where nome=@nome ";
+
+                MySqlCommand listar = new MySqlCommand(sql, conn);
+                listar.Parameters.AddWithValue("@nome", nome);
+
+                conn.Open();
+                listar.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(listar);
+                da.Fill(tabelacliente);
+
+                conn.Close();
+                return tabelacliente;
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Erro ao executar o comando SQL" + erro);
+                return null;
+            }
+        }
+        #endregion
+
+        #region listarClientesPorNome
+        public DataTable listarClientePorNome(string nome)
+        {
+            try
+            {
+                DataTable tabelacliente = new DataTable();
+                string sql = "select *from tb_clientes where nome like @nome ";
+
+                MySqlCommand listar = new MySqlCommand(sql, conn);
+                listar.Parameters.AddWithValue("@nome", nome);
+
+                conn.Open();
+                listar.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(listar);
+                da.Fill(tabelacliente);
+
+                conn.Close();
+                return tabelacliente;
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Erro ao executar o comando SQL" + erro);
+                return null;
+            }
+        }
+        #endregion
     }
 }

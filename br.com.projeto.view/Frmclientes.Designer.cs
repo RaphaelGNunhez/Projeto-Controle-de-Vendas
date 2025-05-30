@@ -70,6 +70,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.btnPesquisarCep = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -113,6 +114,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnPesquisarCep);
             this.tabPage1.Controls.Add(this.cbUf);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.txtCidade);
@@ -249,15 +251,15 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(439, 155);
+            this.txtNumero.Location = new System.Drawing.Point(713, 206);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(80, 23);
+            this.txtNumero.Size = new System.Drawing.Size(56, 23);
             this.txtNumero.TabIndex = 19;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(360, 161);
+            this.label11.Location = new System.Drawing.Point(634, 212);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 17);
             this.label11.TabIndex = 18;
@@ -268,7 +270,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // 
             this.txtEndereco.Location = new System.Drawing.Point(284, 206);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(392, 23);
+            this.txtEndereco.Size = new System.Drawing.Size(344, 23);
             this.txtEndereco.TabIndex = 17;
             // 
             // label10
@@ -282,7 +284,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // 
             // txtCep
             // 
-            this.txtCep.Location = new System.Drawing.Point(249, 158);
+            this.txtCep.Location = new System.Drawing.Point(248, 161);
             this.txtCep.Mask = "00000-999";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(105, 23);
@@ -291,7 +293,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(205, 161);
+            this.label9.Location = new System.Drawing.Point(204, 164);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 17);
             this.label9.TabIndex = 14;
@@ -452,6 +454,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnPesquisar.TabIndex = 6;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisa
             // 
@@ -459,6 +462,8 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(392, 23);
             this.txtPesquisa.TabIndex = 5;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
+            this.txtPesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPesquisa_KeyPress);
             // 
             // label16
             // 
@@ -520,6 +525,19 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnPesquisarCep
+            // 
+            this.btnPesquisarCep.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnPesquisarCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisarCep.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnPesquisarCep.Location = new System.Drawing.Point(359, 161);
+            this.btnPesquisarCep.Name = "btnPesquisarCep";
+            this.btnPesquisarCep.Size = new System.Drawing.Size(94, 26);
+            this.btnPesquisarCep.TabIndex = 6;
+            this.btnPesquisarCep.Text = "Pesquisar";
+            this.btnPesquisarCep.UseVisualStyleBackColor = false;
+            this.btnPesquisarCep.Click += new System.EventHandler(this.btnPesquisarCep_Click);
             // 
             // Frmclientes
             // 
@@ -591,5 +609,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView tabelaCliente;
+        private System.Windows.Forms.Button btnPesquisarCep;
     }
 }

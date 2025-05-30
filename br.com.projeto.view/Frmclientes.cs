@@ -95,6 +95,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             ClienteDAO dao = new ClienteDAO();
             dao.cadastarCliente(obj);
             tabelaCliente.DataSource = dao.ListarClientes();
+            new Helpers().limparTela(this);
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -105,7 +106,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             ClienteDAO dao = new ClienteDAO();
             dao.excluirCliente(obj);
             tabelaCliente.DataSource = dao.ListarClientes();
-            limpar();
+            new Helpers().limparTela(this);
         }
 
         private void tabelaCliente_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -131,7 +132,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            limpar();
+            new Helpers().limparTela(this);
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -155,24 +156,59 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             ClienteDAO dao = new ClienteDAO();
             dao.alterarCliente(obj);
             tabelaCliente.DataSource = dao.ListarClientes();
-            limpar();
         }
-        public void limpar()
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            txtCodigo.Text = "";
-            txtNome.Text = "";
-            txtRg.Text = "";
-            txtCpf.Text = "";
-            txtEmail.Text = "";
-            txtTelefone.Text = "";
-            txtCelular.Text = "";
-            txtCep.Text = "";
-            txtEndereco.Text = "";
-            txtNumero.Text = "";
-            txtComp.Text = "";
-            txtBairro.Text = "";
-            txtCidade.Text = "";
-            cbUf.Text = "";
+            String nome = txtPesquisa.Text;
+
+            ClienteDAO dao = new ClienteDAO();
+
+            tabelaCliente.DataSource = dao.buscarClientePorNome(nome);
+
+            if(tabelaCliente.Rows.Count == 0)
+            {
+                tabelaCliente.DataSource = dao.ListarClientes();
+            }
         }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPesquisa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            String nome = "%" + txtPesquisa.Text + "%";
+            
+            ClienteDAO dao = new ClienteDAO();
+
+            tabelaCliente.DataSource = dao.listarClientePorNome(nome);
+
+        }
+
+        private void btnPesquisarCep_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string cep = txtCep.Text;
+                string xml = "https://viacep.com.br/ws/" + cep + "/xml/";
+                
+                DataSet dados = new DataSet();
+                dados.ReadXml(xml);
+
+                txtEndereco.Text = dados.Tables[0].Rows[0]["logradouro"].ToString();
+                txtComp.Text = dados.Tables[0].Rows[0]["complemento"].ToString();
+                txtCidade.Text = dados.Tables[0].Rows[0]["localidade"].ToString();
+                cbUf.Text = dados.Tables[0].Rows[0]["uf"].ToString();
+                txtBairro.Text = dados.Tables[0].Rows[0]["bairro"].ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Endereço não encontrado, por favor digite manualmente.");
+            }
+        }
+
     }
 }

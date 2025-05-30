@@ -41,3 +41,46 @@ C:\Users\Rafae\source\repos\Projeto Controle de Vendas\obj\Debug\Projeto Control
 C:\Users\Rafae\source\repos\Projeto Controle de Vendas\obj\Debug\Projeto Controle de Vendas.csproj.CopyComplete
 C:\Users\Rafae\source\repos\Projeto Controle de Vendas\obj\Debug\Projeto Controle de Vendas.exe
 C:\Users\Rafae\source\repos\Projeto Controle de Vendas\obj\Debug\Projeto Controle de Vendas.pdb
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Projeto Controle de Vendas.exe.config
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Projeto Controle de Vendas.exe
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Projeto Controle de Vendas.pdb
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Google.Protobuf.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\MySql.Data.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Buffers.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Memory.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\ZstdSharp.dll
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Google.Protobuf.pdb
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Google.Protobuf.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\MySql.Data.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Buffers.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Memory.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.csproj.AssemblyReference.cache
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmclientes.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.Properties.Resources.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.csproj.GenerateResource.cache
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.csproj.CoreCompileInputs.cache
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.csproj.CopyComplete
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.exe
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.pdb
