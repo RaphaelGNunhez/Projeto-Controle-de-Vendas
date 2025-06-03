@@ -84,3 +84,4 @@ C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Pr
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.csproj.CopyComplete
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.exe
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto Controle de Vendas.pdb
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmfuncionarios.resources

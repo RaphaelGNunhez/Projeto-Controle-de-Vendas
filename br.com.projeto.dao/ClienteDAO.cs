@@ -65,11 +65,11 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.dao
             {
                 string sql = @"delete from tb_clientes where id=@id";
 
-                MySqlCommand cadastar = new MySqlCommand(sql, conn);
-                cadastar.Parameters.AddWithValue("@id", obj.cod);
+                MySqlCommand excluir = new MySqlCommand(sql, conn);
+                excluir.Parameters.AddWithValue("@id", obj.cod);
 
                 conn.Open();
-                cadastar.ExecuteNonQuery();
+                excluir.ExecuteNonQuery();
 
                 MessageBox.Show("Cliente removido com sucesso!");
                 conn.Close();
