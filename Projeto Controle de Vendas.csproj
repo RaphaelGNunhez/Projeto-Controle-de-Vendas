@@ -102,10 +102,12 @@
     <Compile Include="br.com.projeto.dao\ClienteDAO.cs" />
     <Compile Include="br.com.projeto.dao\FornecedorDAO.cs" />
     <Compile Include="br.com.projeto.dao\FuncionarioDAO.cs" />
+    <Compile Include="br.com.projeto.dao\ProdutoDAO.cs" />
     <Compile Include="br.com.projeto.model\Cliente.cs" />
     <Compile Include="br.com.projeto.model\Fornecedor.cs" />
     <Compile Include="br.com.projeto.model\Funcionario.cs" />
     <Compile Include="br.com.projeto.model\Helpers.cs" />
+    <Compile Include="br.com.projeto.model\Produto.cs" />
     <Compile Include="br.com.projeto.view\Frmclientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +126,12 @@
     <Compile Include="br.com.projeto.view\Frmfuncionarios.Designer.cs">
       <DependentUpon>Frmfuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="br.com.projeto.view\Frmprodutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.projeto.view\Frmprodutos.Designer.cs">
+      <DependentUpon>Frmprodutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="br.com.projeto.view\Frmfuncionarios.resx">
       <DependentUpon>Frmfuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="br.com.projeto.view\Frmprodutos.resx">
+      <DependentUpon>Frmprodutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
