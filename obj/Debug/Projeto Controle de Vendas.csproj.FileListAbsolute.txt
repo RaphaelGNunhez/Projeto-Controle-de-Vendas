@@ -87,3 +87,7 @@ C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Pr
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmfuncionarios.resources
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmfornecedores.resources
 C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmprodutos.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmvendas.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmpagamentos.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmdetalhes.resources
+C:\Users\Rafae\OneDrive\Documents\GitHub\Projeto-Controle-de-Vendas\obj\Debug\Projeto_Controle_de_Vendas.br.com.projeto.view.Frmhistorico.resources
