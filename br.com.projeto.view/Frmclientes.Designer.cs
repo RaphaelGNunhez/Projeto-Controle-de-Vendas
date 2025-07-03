@@ -29,8 +29,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabClientes = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnPesquisarCep = new System.Windows.Forms.Button();
@@ -71,37 +69,14 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabClientes.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaCliente)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 90);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(27, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cadastro de Clientes";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabClientes
             // 
@@ -109,7 +84,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.tabClientes.Controls.Add(this.tabPage2);
             this.tabClientes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabClientes.Location = new System.Drawing.Point(2, 98);
-            this.tabClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabClientes.Margin = new System.Windows.Forms.Padding(4);
             this.tabClientes.Name = "tabClientes";
             this.tabClientes.SelectedIndex = 0;
             this.tabClientes.Size = new System.Drawing.Size(1064, 489);
@@ -147,9 +122,9 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.tabPage1.Controls.Add(this.txtCodigo);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1056, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Dados Pessoais";
@@ -162,7 +137,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnPesquisarCep.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisarCep.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPesquisarCep.Location = new System.Drawing.Point(478, 210);
-            this.btnPesquisarCep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisarCep.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisarCep.Name = "btnPesquisarCep";
             this.btnPesquisarCep.Size = new System.Drawing.Size(126, 34);
             this.btnPesquisarCep.TabIndex = 6;
@@ -202,7 +177,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             "SE",
             "TO"});
             this.cbUf.Location = new System.Drawing.Point(698, 396);
-            this.cbUf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbUf.Margin = new System.Windows.Forms.Padding(4);
             this.cbUf.Name = "cbUf";
             this.cbUf.Size = new System.Drawing.Size(60, 25);
             this.cbUf.TabIndex = 27;
@@ -222,7 +197,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(418, 395);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(212, 23);
             this.txtCidade.TabIndex = 25;
@@ -242,7 +217,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(94, 395);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(212, 23);
             this.txtBairro.TabIndex = 23;
@@ -260,7 +235,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtComp
             // 
             this.txtComp.Location = new System.Drawing.Point(170, 332);
-            this.txtComp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtComp.Margin = new System.Windows.Forms.Padding(4);
             this.txtComp.Name = "txtComp";
             this.txtComp.Size = new System.Drawing.Size(522, 23);
             this.txtComp.TabIndex = 21;
@@ -278,7 +253,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(950, 269);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(74, 23);
             this.txtNumero.TabIndex = 19;
@@ -297,7 +272,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtEndereco
             // 
             this.txtEndereco.Location = new System.Drawing.Point(378, 269);
-            this.txtEndereco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(458, 23);
             this.txtEndereco.TabIndex = 17;
@@ -315,7 +290,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtCep
             // 
             this.txtCep.Location = new System.Drawing.Point(330, 210);
-            this.txtCep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCep.Margin = new System.Windows.Forms.Padding(4);
             this.txtCep.Mask = "00000-999";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(138, 23);
@@ -334,7 +309,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtCelular
             // 
             this.txtCelular.Location = new System.Drawing.Point(110, 269);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelular.Mask = "(99) 0 0000-0000";
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(138, 23);
@@ -353,7 +328,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(110, 207);
-            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefone.Mask = "(99) 0000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(138, 23);
@@ -372,7 +347,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtCpf
             // 
             this.txtCpf.Location = new System.Drawing.Point(698, 144);
-            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(4);
             this.txtCpf.Mask = "###,###,###-##";
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(138, 23);
@@ -391,7 +366,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtRg
             // 
             this.txtRg.Location = new System.Drawing.Point(698, 80);
-            this.txtRg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRg.Margin = new System.Windows.Forms.Padding(4);
             this.txtRg.Mask = "##,###,###-##";
             this.txtRg.Name = "txtRg";
             this.txtRg.Size = new System.Drawing.Size(138, 23);
@@ -411,7 +386,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(110, 144);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(522, 23);
             this.txtEmail.TabIndex = 5;
@@ -430,7 +405,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(110, 83);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(522, 23);
             this.txtNome.TabIndex = 3;
@@ -448,7 +423,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(110, 26);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(162, 23);
             this.txtCodigo.TabIndex = 1;
@@ -470,10 +445,10 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.tabPage2.Controls.Add(this.txtPesquisa);
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1056, 450);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1056, 459);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -484,7 +459,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.tabelaCliente.AllowUserToDeleteRows = false;
             this.tabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabelaCliente.Location = new System.Drawing.Point(16, 94);
-            this.tabelaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabelaCliente.Margin = new System.Windows.Forms.Padding(4);
             this.tabelaCliente.Name = "tabelaCliente";
             this.tabelaCliente.ReadOnly = true;
             this.tabelaCliente.Size = new System.Drawing.Size(1022, 338);
@@ -497,7 +472,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnPesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPesquisar.Location = new System.Drawing.Point(654, 36);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(226, 43);
             this.btnPesquisar.TabIndex = 6;
@@ -508,7 +483,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             // txtPesquisa
             // 
             this.txtPesquisa.Location = new System.Drawing.Point(110, 45);
-            this.txtPesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(522, 23);
             this.txtPesquisa.TabIndex = 5;
@@ -531,7 +506,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnNovo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnNovo.Location = new System.Drawing.Point(78, 595);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(226, 43);
             this.btnNovo.TabIndex = 2;
@@ -545,7 +520,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnSalvar.Location = new System.Drawing.Point(310, 595);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(216, 43);
             this.btnSalvar.TabIndex = 3;
@@ -559,7 +534,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnExcluir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnExcluir.Location = new System.Drawing.Point(534, 595);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(224, 43);
             this.btnExcluir.TabIndex = 4;
@@ -573,13 +548,38 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnEditar.Location = new System.Drawing.Point(766, 595);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(218, 43);
             this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(27, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(225, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cadastro de Clientes";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1066, 90);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Frmclientes
             // 
@@ -593,30 +593,25 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.Controls.Add(this.tabClientes);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frmclientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Clientes";
             this.Load += new System.EventHandler(this.Frmclientes_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tabClientes.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabelaCliente)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabClientes;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
@@ -654,5 +649,9 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView tabelaCliente;
         private System.Windows.Forms.Button btnPesquisarCep;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.TabControl tabClientes;
+        public System.Windows.Forms.TabPage tabPage2;
     }
 }

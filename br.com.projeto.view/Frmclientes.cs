@@ -174,7 +174,11 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
+            string nome = "%" + txtPesquisa.Text + "%";
 
+            ClienteDAO dao = new ClienteDAO();
+
+            tabelaCliente.DataSource = dao.listarClientePorNome(nome);
         }
 
         private void txtPesquisa_KeyPress(object sender, KeyPressEventArgs e)

@@ -209,5 +209,42 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.dao
             }
         }
         #endregion
+
+        #region retornaClientePorCpf
+        public Cliente retornaClientePorCpf(string cpf)
+        {
+            try
+            {
+                Cliente obj = new Cliente();
+                string sql = @"select *from tb_clientes where cpf = @cpf";
+
+                MySqlCommand retornar = new MySqlCommand(sql, conn);
+                retornar.Parameters.AddWithValue("@cpf", cpf);
+
+                conn.Open();
+
+                MySqlDataReader rs = retornar.ExecuteReader();
+                if (rs.Read())
+                {
+                    obj.cod = rs.GetInt32("id");
+                    obj.nome = rs.GetString("nome");
+                    return obj;
+                } else {
+                    MessageBox.Show("Cliente não encontrado");
+                    return null;
+                }
+
+                conn.Close();
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Aconteceu um erro!");
+
+                return null;
+            }
+        }
+        #endregion
     }
 }
