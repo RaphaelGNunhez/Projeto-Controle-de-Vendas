@@ -33,6 +33,12 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabProdutos = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cbFornecedor = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtQtd = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -46,12 +52,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.txtPreco = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtQtd = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbFornecedor = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tabProdutos.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -115,6 +115,62 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.tabPage1.Text = "Dados Pessoais";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // cbFornecedor
+            // 
+            this.cbFornecedor.FormattingEnabled = true;
+            this.cbFornecedor.Location = new System.Drawing.Point(126, 256);
+            this.cbFornecedor.Name = "cbFornecedor";
+            this.cbFornecedor.Size = new System.Drawing.Size(298, 25);
+            this.cbFornecedor.TabIndex = 11;
+            this.cbFornecedor.SelectedIndexChanged += new System.EventHandler(this.cbFornecedor_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(26, 264);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 17);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Fornecedor";
+            // 
+            // txtQtd
+            // 
+            this.txtQtd.Location = new System.Drawing.Point(126, 199);
+            this.txtQtd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(157, 23);
+            this.txtQtd.TabIndex = 9;
+            this.txtQtd.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 205);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Qtd Estoque:";
+            // 
+            // txtPreco
+            // 
+            this.txtPreco.Location = new System.Drawing.Point(108, 145);
+            this.txtPreco.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(157, 23);
+            this.txtPreco.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 150);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 17);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Preço (R$):";
             // 
             // txtDesc
             // 
@@ -272,62 +328,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // txtPreco
-            // 
-            this.txtPreco.Location = new System.Drawing.Point(108, 145);
-            this.txtPreco.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(157, 23);
-            this.txtPreco.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 150);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Preço (R$):";
-            // 
-            // txtQtd
-            // 
-            this.txtQtd.Location = new System.Drawing.Point(126, 199);
-            this.txtQtd.Margin = new System.Windows.Forms.Padding(4);
-            this.txtQtd.Name = "txtQtd";
-            this.txtQtd.Size = new System.Drawing.Size(157, 23);
-            this.txtQtd.TabIndex = 9;
-            this.txtQtd.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 17);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Qtd Estoque:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 264);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 17);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Fornecedor";
-            // 
-            // cbFornecedor
-            // 
-            this.cbFornecedor.FormattingEnabled = true;
-            this.cbFornecedor.Location = new System.Drawing.Point(126, 256);
-            this.cbFornecedor.Name = "cbFornecedor";
-            this.cbFornecedor.Size = new System.Drawing.Size(298, 25);
-            this.cbFornecedor.TabIndex = 11;
-            this.cbFornecedor.SelectedIndexChanged += new System.EventHandler(this.cbFornecedor_SelectedIndexChanged);
-            // 
             // Frmprodutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,13 +358,11 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabControl tabProdutos;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView tabelaProdutos;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
@@ -379,5 +377,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbFornecedor;
         private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TabControl tabProdutos;
+        public System.Windows.Forms.TabPage tabPage2;
     }
 }

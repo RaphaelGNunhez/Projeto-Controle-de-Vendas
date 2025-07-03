@@ -611,9 +611,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         }
 
         #endregion
-        private System.Windows.Forms.TabControl tabClientes;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
@@ -653,5 +651,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Button btnPesquisarCep;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.TabControl tabClientes;
+        public System.Windows.Forms.TabPage tabPage2;
     }
 }

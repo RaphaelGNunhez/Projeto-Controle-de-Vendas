@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using Projeto_Controle_de_Vendas.br.com.projeto.connection;
 using Projeto_Controle_de_Vendas.br.com.projeto.model;
+using Projeto_Controle_de_Vendas.br.com.projeto.view;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -213,6 +214,67 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.dao
 
                 MessageBox.Show("Erro ao executar o comando SQL" + erro);
                 return null;
+            }
+        }
+        #endregion
+
+        #region efetuarLogin
+        public Boolean efetuarLogin(string email, string senha)
+        {
+            try
+            {
+                string sql = "select * from tb_funcionarios where email = @email and senha = @senha";
+
+                MySqlCommand logar = new MySqlCommand(sql,conn);
+                logar.Parameters.AddWithValue("@email", email);
+                logar.Parameters.AddWithValue("@senha", senha);
+
+                conn.Open();
+
+                MySqlDataReader reader = logar.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    //Login feito com sucesso
+
+                    string nivel = reader.GetString("nivel_acesso");
+                    string nome = reader.GetString("nome");
+                    //MessageBox.Show("Login realizado com acesso de: " + nivel);
+                    MessageBox.Show("Seja bem vindo ao sistema, " + nome);
+                    Frmmenu telamenu = new Frmmenu();
+                    telamenu.txtUsuario.Text = nome;
+
+                    if (nivel.Equals("Administrador"))
+                    {
+                        
+                        telamenu.Show();
+                        conn.Close();
+                    }
+                    else if (nivel.Equals("Vendedor"))
+                    {
+                        telamenu.menuProdutos.Visible = false;
+                        telamenu.menuHistoricoVenda.Visible = false;
+                        telamenu.Show();
+                    }
+
+                    
+                    return true;
+                }
+                else
+                {
+                    //Login falhou
+                    MessageBox.Show("Email ou senha incorreto!");
+                    conn.Close();
+                    return false;
+                }
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Aconteceu um erro: " + erro);
+                conn.Close();
+                return false;
             }
         }
         #endregion

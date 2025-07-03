@@ -1073,7 +1073,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TabControl tabFornecedor;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnCEPFornecedor;
         private System.Windows.Forms.ComboBox cbUfFornecedor;
@@ -1102,7 +1101,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtCodigoFornecedor;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView tabelaFornecedor;
         private System.Windows.Forms.Button btnPesquisarFornecedor;
         private System.Windows.Forms.TextBox txtPesquisarFornecedor;
@@ -1111,5 +1109,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnNovo;
+        public System.Windows.Forms.TabControl tabFornecedor;
+        public System.Windows.Forms.TabPage tabPage4;
     }
 }

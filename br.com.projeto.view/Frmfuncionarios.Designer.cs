@@ -170,7 +170,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
             this.cbNivel.FormattingEnabled = true;
             this.cbNivel.Items.AddRange(new object[] {
             "Administrador",
-            "Usuário"});
+            "Vendedor"});
             this.cbNivel.Location = new System.Drawing.Point(680, 21);
             this.cbNivel.Margin = new System.Windows.Forms.Padding(4);
             this.cbNivel.Name = "cbNivel";
@@ -688,7 +688,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabControl tabFuncionario;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnPesquisarCep;
         private System.Windows.Forms.ComboBox cbUf;
@@ -719,7 +718,6 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView tabelaFornecedor;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
@@ -734,5 +732,7 @@ namespace Projeto_Controle_de_Vendas.br.com.projeto.view
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cbNivel;
         private System.Windows.Forms.Label label19;
+        public System.Windows.Forms.TabControl tabFuncionario;
+        public System.Windows.Forms.TabPage tabPage2;
     }
 }

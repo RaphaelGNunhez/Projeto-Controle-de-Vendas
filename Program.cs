@@ -17,7 +17,7 @@ namespace Projeto_Controle_de_Vendas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frmhistorico());
+            Application.Run(new Frmlogin());
         }
     }
 }
